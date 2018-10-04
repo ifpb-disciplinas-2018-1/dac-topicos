@@ -130,6 +130,7 @@ public class AlunoService {
         ScheduleExpression schedule = new ScheduleExpression()
                 .dayOfMonth(1)
                 .hour(12);
+        // schedule.hour("*").minute("*").second("13,34,57");        
         TimerConfig timerConfig = new TimerConfig();
         timerConfig.setInfo(aluno);
         timerService.createCalendarTimer(schedule,timerConfig);
@@ -140,6 +141,7 @@ public class AlunoService {
     }
 }
 ```
+![Opções](timer.png "Configurações dos Timers")
 
 ## Recursos e JNDI
 
