@@ -56,7 +56,7 @@ public class LogEntities {
 
 ## Interceptadores
 
-A solucão apresentada anteriormente é aplicável nas classes das entidades que representam o dominio da aplicação. Os interceptadores são objetos capazes de se interporem sobre chamadas de métodos ou eventos do ciclo de vida dos Session Beans e MDBs. Eles encapsulam o comportamento comum de vários beans, evitando poluição de código.
+A solucão apresentada anteriormente é aplicável às classes das entidades que representam o dominio da aplicação. Os interceptadores são objetos capazes de se interporem sobre chamadas de métodos ou eventos do ciclo de vida dos Session Beans e MDBs. Eles encapsulam o comportamento comum de vários beans, evitando poluição de código.
 
 Podemos identificar os interceptadores quando temos classes java simples que possuem um método anotado com:
 `@javax.interceptor.AroundInvoke`. 
@@ -109,7 +109,7 @@ Em ambos os casos, os métodos recebem como parâmetro uma instância do tipo `I
 
 ## __Timer Service__
 
-O __Timer Service__ é um serviço de execução de tarefa agendada, sendo recurso fornecido pelo container EJB que fornece uma API de evento sincronizado. É utilizado para agendar timers (temporizadores) e fica associado a um Enterprise Java Bean. 
+O __Timer Service__ é um serviço de execução de tarefa agendada, sendo recurso gerido pelo container EJB que fornece uma API de evento sincronizado. É utilizado para agendar timers (temporizadores) e fica associado a um Enterprise Java Bean. 
 
 Podemos utilizá-los de duas formas: em eventos com um momento pré-definido ou eventos intervalares. 
 
